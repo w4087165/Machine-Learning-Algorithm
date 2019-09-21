@@ -39,12 +39,12 @@ rfr.fit(data_train,target_train)
 print(rfr.score(data_test,target_test)) #0.7910601348350835
 from sklearn.model_selection import GridSearchCV
 #交叉验证
-tree_parma_grid = {'min_samples_split':list((3,6,9)),
-                   'n_estimators':list((10,50,100))}
-gird = GridSearchCV(RandomForestRegressor(),param_grid=tree_parma_grid,cv=3)
-gird.fit(data_train,target_train)
-print(gird.best_params)
-print(gird.best_score)
+# tree_parma_grid = {'min_samples_split':list((3,6,9)),
+#                    'n_estimators':list((10,50,100))}
+# gird = GridSearchCV(RandomForestRegressor(),param_grid=tree_parma_grid,cv=3)
+# gird.fit(data_train,target_train)
+# print(gird.best_params)
+# print(gird.best_score)
 
 
 
